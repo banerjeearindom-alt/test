@@ -1,0 +1,25 @@
+{
+  "name": "Acreo",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+
+  // Install deps and create/seed the SQLite database once, when the codespace is built.
+  "postCreateCommand": "npm install && npm run seed",
+
+  // Start the server every time the codespace is (re)attached.
+  "postAttachCommand": "npm start",
+
+  // Acreo listens on 3000; forward it and pop open a preview automatically.
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "Acreo",
+      "onAutoForward": "openPreview"
+    }
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": ["dbaeumer.vscode-eslint"]
+    }
+  }
+}
