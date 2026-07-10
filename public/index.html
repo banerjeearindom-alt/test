@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Acreo — Find your dream property</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#/" class="logo" data-link>Acreo<span>.in</span></a>
+      <nav class="top-nav" id="top-nav"></nav>
+    </div>
+  </header>
+
+  <main id="app" class="app-main"><!-- views render here --></main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo small">Acreo<span>.in</span></div>
+        <p class="muted">A demo real-estate marketplace built module by module with Express + node:sqlite.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="#/results?purpose=sale" data-link>Buy</a>
+        <a href="#/results?purpose=rent" data-link>Rent</a>
+        <a href="#/post" data-link>Post Property</a>
+      </div>
+      <div>
+        <h4>Top Cities</h4>
+        <a href="#/results?city=Bengaluru" data-link>Bengaluru</a>
+        <a href="#/results?city=Mumbai" data-link>Mumbai</a>
+        <a href="#/results?city=Pune" data-link>Pune</a>
+      </div>
+    </div>
+    <div class="container copyright muted">© 2026 Acreo — demo project. Not affiliated with 99acres.</div>
+  </footer>
+
+  <div id="modal-root"></div>
+  <div id="toast-root"></div>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/ui.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
